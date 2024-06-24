@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.2")
+    testImplementation("org.mockito:mockito-core:5.0.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:5.0.0")
+    testImplementation("org.mockito:mockito-inline:5.0.0")
     testImplementation(kotlin("test"))
 }
 

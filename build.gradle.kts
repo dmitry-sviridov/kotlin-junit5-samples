@@ -14,6 +14,7 @@ dependencies {
     testImplementation("org.mockito:mockito-core:5.0.0")
     testImplementation("org.mockito:mockito-junit-jupiter:5.0.0")
     testImplementation("org.mockito:mockito-inline:5.0.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.0.0")
     testImplementation(kotlin("test"))
 }
 
@@ -21,17 +22,6 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.register<Test>("tagged-A") {
-    useJUnitPlatform {
-        includeTags("A")
-    }
-}
-
-tasks.register<Test>("tagged-B") {
-    useJUnitPlatform {
-        includeTags("B")
-    }
-}
 
 kotlin {
     jvmToolchain(17)
